@@ -1,0 +1,159 @@
+body{
+    position: relative;
+    width:100%;
+    background: rgba(0, 0, 0, 0.87);
+}
+#horizon{
+    position: absolute;
+    width: 0;
+    height: 10px;
+    left: 0;
+    top: 450px;
+    background: #FFFFFF;
+}
+#title{
+    position: absolute;
+    width: 707px;
+    height: 207px;
+    left: 366px;
+    top: 130px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 117px;
+    text-align: center;
+
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+    animation: rotate_anime 10s linear infinite;
+}
+#circle{
+    display:inline-block;
+    position: absolute;
+    width: 866.5px;
+    height: 362.22px;
+    left: 294px;
+    top: 440px;
+
+    border: 5px solid #FFFFFF;
+    border-radius: 50% / 0 0 100% 100%;
+}
+#contact{
+    margin:0;
+    position: absolute;
+    width: 249px;
+    height: 76px;
+    left: 86px;
+    top: 575px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 59px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+#whoami{
+    position: absolute;
+    width: 249px;
+    height: 76px;
+    left: calc(50% - 249px/2 - 0.5px);
+    top: 825px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 59px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+#works{
+    position: absolute;
+    width: 249px;
+    height: 76px;
+    left: 1124px;
+    top: 575px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 59px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.btn{
+    display: inline-block;
+    font-size: 40px;
+    color: #FFFFFF;
+    transition: all 0.7s;
+}
+.btn:hover{
+    font-size:45px;
+    color:aquamarine;
+}
+.audio_button{
+    position: absolute;
+    width:70px;
+    height:70px;
+    left: 100px;
+    top: 100px;
+
+    background-image: url(../icon/ic_volume_off.png);
+    background-size: contain;
+    transition: all 0.7s;
+}
+.audio_button:hover{
+    width:80px;
+    height:80px;
+    background-size: contain;
+}
+
+.play .audio_button{
+    width:70px;
+    height:70px;
+    background-image: url(../icon/ic_volume.png);
+    background-size: contain;
+}
+
+.play .audio_button:hover{
+    width:80px;
+    height:80px;
+    background-image: url(../icon/ic_volume.png);
+    background-size: contain;
+}
+
+.wave{
+    margin-top: 1500px;
+}
+
+.wave p{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 59px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+hr {
+    border: solid 3px white;
+}
+
+@keyframes rotate_anime {
+    0% {
+      transform: rotateX(0deg);
+    }
+    20% {
+      transform: rotateX(360deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
