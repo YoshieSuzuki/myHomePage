@@ -1,10 +1,4 @@
-import responder
-
-api = responder.API()
-
-@api.route("/")
-def home_html(req, resp):
-    resp.content = api.template('Home.html')
+from urls import api
 
 if __name__ == '__main__':
     api.run()
