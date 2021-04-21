@@ -6,7 +6,6 @@ class IndexController:
     async def on_get(self, req, resp):
         resp.html = api.template('Home.html')
 
-class CreateController:
-    async def on_get(self, req, resp, hogehoge):
-        #something
-        pass
+class SpecialThanksController:
+    async def on_get(self, req, resp):
+        resp.html = api.template('specialthanks.html')

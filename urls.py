@@ -1,6 +1,7 @@
 from controllers import api
-from controllers import IndexController, CreateController
+import controllers
 
-api.add_route('/', IndexController)
+api.add_route('/', controllers.IndexController)
+api.add_route('/Home.html', controllers.IndexController)
 
-api.add_route('/create/{hogehoge}', CreateController)
+api.add_route('/specialthanks.html', controllers.SpecialThanksController)
