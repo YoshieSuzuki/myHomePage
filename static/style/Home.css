@@ -1,6 +1,7 @@
 body{
     position: relative;
     width:100%;
+    height:100%;
     background: rgba(0, 0, 0, 0.87);
 }
 #horizon{
@@ -129,7 +130,7 @@ body{
     margin-top: 1500px;
 }
 
-.wave p{
+.title{
     font-family: Roboto;
     font-style: italic;
     font-weight: 200;
@@ -140,6 +141,12 @@ body{
     text-decoration-color: #FFFFFF;
     color: #FFFFFF;
     font-size: 40px;
+}
+
+.introduce{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
 }
 
 hr {
